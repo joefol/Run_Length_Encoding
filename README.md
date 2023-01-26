@@ -1,4 +1,5 @@
 **Description**
+
 rle implements run-length encoding for the compression of files. You must use the read() and write() system calls (documented at man 2 read and man 2 write, respectively) to read the input file and write to the output file. Additionally, your program should only output runs of up to length 255, this is so the run-length specifier is guaranteed to always be one byte.
 
 Run-length encoding is a compression technique that identifies "runs" of repeated characters and represents these compactly. The length of each run is counted, and the base is stored along with the number of repetitions of that basis. For example, the string AAABBBBBB consists of nine bytes, but it could be instead represented as 3A6B, where "A" and "B" are the basis of each run and the numbers give how many times each base is repeated.
